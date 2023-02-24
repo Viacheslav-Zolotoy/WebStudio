@@ -23,33 +23,84 @@
             ><span class="logo-text"> Web</span>Studio</a
           >
           <!-- Nav-Title -->
-          <ul class="nav-title">
-            <li class="nav-li line">
-              <a class="nav-link decor studio" href="./index.html">Studio</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-link decor" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-li">
-              <a class="nav-link decor" href="#">Contacts</a>
-            </li>
-          </ul>
+
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="modile-button" width="32" height="22">
+              <use href="./images/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+
+          <!-- Mobile menu -->
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="button-close" width="8" height="8">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="nav-title">
+              <li class="nav-li line">
+                <a class="nav-link decor studio" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-li">
+                <a class="nav-link decor" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-li">
+                <a class="nav-link decor contacts-current" href="#">Contacts</a>
+              </li>
+            </ul>
+
+            <!-- Contacts -->
+            <address>
+              <ul class="contacts">
+                <li class="contacts-li">
+                  <a href="mailto:info@devstudio.com" class="mail decor"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts-li">
+                  <a href="tel:+110001111111" class="tel decor"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="menu-toggle team-icon-list">
+              <li class="team-icon-li">
+                <a href="#" class="team-icon-link">
+                  <svg class="team-icon-svg" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-icon-li">
+                <a href="#" class="team-icon-link">
+                  <svg class="team-icon-svg" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-icon-li">
+                <a href="#" class="team-icon-link">
+                  <svg class="team-icon-svg" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-icon-li">
+                <a href="#" class="team-icon-link">
+                  <svg class="team-icon-svg" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <!-- Contacts -->
-        <address>
-          <ul class="contacts">
-            <li class="contacts-li">
-              <a href="mailto:info@devstudio.com" class="mail decor"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-li">
-              <a href="tel:+110001111111" class="tel decor"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
     <!-- Main content -->
@@ -188,6 +239,7 @@
           <ul class="demo-list margin">
             <li class="demo-li">
               <img
+                srcset="./images/img-1@2x (1).jpg"
                 src="./images/img-1.jpg"
                 alt="Монітор компʼютера з графіками"
                 width="360"
@@ -195,6 +247,7 @@
             </li>
             <li class="demo-li">
               <img
+                srcset="./images/img-2@2x.jpg"
                 src="./images/img-2.jpg"
                 alt="Демонстрація мобільного додатку (месенджер) на єкрані телефона"
                 width="360"
@@ -202,6 +255,7 @@
             </li>
             <li class="demo-li">
               <img
+                srcset="./images/img-3@2x.jpg"
                 src="./images/img-3.jpg"
                 alt="Демонстрація додатку на екрані ноутбуку і мобільного телефону,ілюстрація подорожей."
                 width="360"
@@ -217,6 +271,7 @@
           <ul class="team-list margin">
             <li class="team-li">
               <img
+                srcset="./images/team-1@2x.jpg"
                 src="./images/team-1.jpg"
                 alt="Фото дорослого чоловіка"
                 width="264"
@@ -266,6 +321,7 @@
             </li>
             <li class="team-li">
               <img
+                srcset="./images/team-2@2x.jpg"
                 src="./images/team-2.jpg"
                 alt="Фото дорослого чоловіка"
                 width="264"
@@ -315,6 +371,7 @@
             </li>
             <li class="team-li">
               <img
+                srcset="./images/team-3@2x.jpg"
                 src="./images/team-3.jpg"
                 alt="Фото молодої дівчини"
                 width="264"
@@ -364,6 +421,7 @@
             </li>
             <li class="team-li">
               <img
+                srcset="./images/team-4@2x.jpg"
                 src="./images/team-4.jpg"
                 alt="Фото молодого хлопця"
                 width="264"
@@ -487,47 +545,49 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container foot-contain">
-        <div class="business">
-          <a href="./index.html" class="footer-logo decor"
-            ><span class="logo-text"> Web</span>Studio</a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="social">
-          <h3 class="social-title">Social media</h3>
-          <ul class="social-list">
-            <li class="social-li">
-              <a href="#" class="social-link">
-                <svg class="social-svg" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-li">
-              <a href="#" class="social-link">
-                <svg class="social-svg" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-li">
-              <a href="#" class="social-link">
-                <svg class="social-svg" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-li">
-              <a href="#" class="social-link">
-                <svg class="social-svg" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="tablet-container">
+          <div class="business">
+            <a href="./index.html" class="footer-logo decor"
+              ><span class="logo-text"> Web</span>Studio</a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="social">
+            <h3 class="social-title">Social media</h3>
+            <ul class="social-list">
+              <li class="social-li">
+                <a href="#" class="social-link">
+                  <svg class="social-svg" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="#" class="social-link">
+                  <svg class="social-svg" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="#" class="social-link">
+                  <svg class="social-svg" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="#" class="social-link">
+                  <svg class="social-svg" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-form">
           <form class="form-sub">
@@ -552,6 +612,8 @@
         </div>
       </div>
     </footer>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
