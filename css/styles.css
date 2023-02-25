@@ -146,7 +146,7 @@ img {
 
   .contacts {
     flex-direction: column-reverse;
-    margin-top: 140px;
+    margin-top: 90px;
   }
 
   .contacts-li:first-child {
